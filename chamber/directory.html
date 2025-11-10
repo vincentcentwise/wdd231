@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lagos state Chamber of Commerce Directory page" />
+  <meta name="author" content="VINCENT TAIYE BALOGUN" />
+  <title> Lagos Chamber of Commerce Directory</title>
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Lagos Chamber of Commerce" />
+  <meta property="og:description" content="Connect with local businesses in Lagos." />
+  <meta property="og:image" content="images/social-image.jpg" />
+  <meta property="og:url" content="https://yourchambersite.com" />
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg>
+        <span>Lagos Chamber of Commerce</span>
+   
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view-toggle">
+      <button id="grid-view" class="active">Grid View</button>
+      <button id="list-view">List View</button>
+    </section>
+
+    
+
+    <section id="members-container" class="grid-view">
+      <!-- Cards inserted here dynamically with JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+    <p>WDD231 Class Project | VINCENT TAIYE BALOGUN |<span id="lastModified"></span></p>
+  </footer>
+
+  <script src="js/scripts.js" defer></script>
+    <script src="js/card.js" defer></script>
+</body>
+</html>

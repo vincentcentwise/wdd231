@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "name": "Sahara Traders Ltd",
+      "address": "10 Desert Rd, lagos",
+      "phone": "800-555-1001",
+      "website": "https://saharatraders.com",
+      "image": "member1.jpg",
+      "level": "Gold"
+    },
+    {
+      "name": "Blue River Tech",
+      "address": "25 River St, lagos",
+      "phone": "800-555-1002",
+      "website": "https://bluerivertech.com",
+      "image": "download1.jpg",
+      "level": "Silver"
+    },
+    {
+      "name": "Lagos Coffee",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://clagoskola.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+     {
+      "name": " Coffee",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://bluerivertech.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+     {
+      "name": "Blue River Tech",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://lagoscoffee.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+     {
+      "name": "Sahara Traders Ltd",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://lagoscoffee.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+     {
+      "name": "Lagos Coffee",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://lagoscoffee.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    },
+     {
+      "name": "Lagos Coffee",
+      "address": "5 Market Ave, lagos",
+      "phone": "800-555-1003",
+      "website": "https://clagoskola.com",
+      "image": "member3.jpg",
+      "level": "Member"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header & Nav */
+header {
+  display: flex;
+  align-items: center;     /* Vertically center logo/text/nav */
+  justify-content: space-between;  /* Push nav to the right */
+  padding: 0.5rem 1rem;    /* Add some spacing */
+  background: #003366; /* optional */
+  border-bottom: 2px solid #ddd;
+  color: #ccc;
+  height: 70px;
+}
+
+header span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* /* Group logo + title together  */
+header > span, header > svg {
+  display: inline-block;
+}
+
+/* Style nav menu */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+#nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-menu a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Grid/List Toggle */
+.view-toggle {
+  text-align: center;
+  margin: 1rem;
+}
+
+.view-toggle button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Members Layout */
+#members-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.member-card {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.member-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* --- Animation and transitions --- */
+
+/* Smooth fade-in for the container */
+#members-container {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hidden state before fade */
+#members-container.fade-out {
+  opacity: 0;
+}
+
+/* Card entry animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.member-card {
+  animation: slideUp 0.4s ease forwards;
+}
+
+/* List (table) layout */
+#members-container.list-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#members-container.list-view th,
+#members-container.list-view td {
+  border: 1px solid #999;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+#members-container.list-view tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+/* Toggle buttons */
+.view-toggle button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* === HAMBURGER BUTTON === */
+#menu-toggle {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* === RESPONSIVE BEHAVIOR === */
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+   
+  }
+ 
+  /* Show hamburger button on mobile */
+  #menu-toggle {
+    display: block;
+  }
+
+  /* Stack nav menu vertically */
+  #nav-menu {
+    flex-direction: column;
+    width: 100%;
+    background: #0f5ccf;
+    border-top: 1px solid #ddd;
+
+    display: none; /* Hidden until toggled */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  /* When menu is toggled open */
+  #nav-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Optional: make links take full width */
+  #nav-menu li {
+    text-align: right;
+   
+  }
+}
