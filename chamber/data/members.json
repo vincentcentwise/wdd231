@@ -5,7 +5,7 @@
       "address": "10 Desert Rd, lagos",
       "phone": "800-555-1001",
       "website": "https://saharatraders.com",
-      "image": "member1.jpg",
+      "image": "member1.jpeg",
       "level": "Gold"
     },
     {
@@ -13,7 +13,7 @@
       "address": "25 River St, lagos",
       "phone": "800-555-1002",
       "website": "https://bluerivertech.com",
-      "image": "download1.jpg",
+      "image": "download1.jpeg",
       "level": "Silver"
     },
     {
@@ -21,7 +21,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://clagoskola.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     },
      {
@@ -29,7 +29,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://bluerivertech.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     },
      {
@@ -37,7 +37,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://lagoscoffee.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     },
      {
@@ -45,7 +45,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://lagoscoffee.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     },
      {
@@ -53,7 +53,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://lagoscoffee.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     },
      {
@@ -61,7 +61,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://clagoskola.com",
-      "image": "member3.jpg",
+      "image": "member3.jpeg",
       "level": "Member"
     }
   ]
