@@ -1,6 +1,8 @@
 {
   "members": [
-    {
+   
+    
+     {
       "name": "Sahara Traders Ltd",
       "address": "10 Desert Rd, lagos",
       "phone": "800-555-1001",
@@ -29,7 +31,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://bluerivertech.com",
-      "image": "member3.jpeg",
+      "image": "member2.jpeg",
       "level": "Member"
     },
      {
@@ -45,7 +47,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://lagoscoffee.com",
-      "image": "member3.jpeg",
+      "image": "member1.jpeg",
       "level": "Member"
     },
      {
@@ -61,7 +63,7 @@
       "address": "5 Market Ave, lagos",
       "phone": "800-555-1003",
       "website": "https://clagoskola.com",
-      "image": "member3.jpeg",
+      "image": "member2.jpeg",
       "level": "Member"
     }
   ]
