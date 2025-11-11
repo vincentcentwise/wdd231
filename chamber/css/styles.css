@@ -10,11 +10,12 @@ header {
   display: flex;
   align-items: center;     /* Vertically center logo/text/nav */
   justify-content: space-between;  /* Push nav to the right */
-  padding: 0.5rem 1rem;    /* Add some spacing */
+  padding: 0.5rem 0.5rem;    /* Add some spacing */
   background: #003366; /* optional */
   border-bottom: 2px solid #ddd;
   color: #ccc;
   height: 70px;
+ 
 }
 
 header span {
@@ -202,9 +203,4 @@ footer {
     transform: translateY(0);
   }
 
-  /* Optional: make links take full width */
-  #nav-menu li {
-    text-align: right;
-   
-  }
 }
