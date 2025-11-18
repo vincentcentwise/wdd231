@@ -15,6 +15,8 @@ menuToggle.addEventListener("click", () => {
 });
 
 
+
+
 // scripts/weather.js
 // Replace YOUR_API_KEY with your valid OpenWeather key if you want to change it.
 // Current coordinates match your original code.
