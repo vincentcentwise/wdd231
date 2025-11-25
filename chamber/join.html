@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagos Chamber of Commerce | Home page </title>
+    <title>Lagos Chamber of Commerce | Join page </title>
     <meta name="description"
-        content="Explore local businesses and connect with professionals in the Ibadan Chamber of Commerce directory.">
+        content="Explore local businesses and connect with professionals in the Lagos Chamber of Commerce directory.">
     <meta name="author" content="VINCENT TAIYE BALOGUN">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
-    <meta property="og:description" content="Connecting businesses and promoting economic growth in Ibadan.">
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and promoting economic growth in Lagos.">
     <meta property="og:image" content="https://github.com/vincentcentwise/wdd231/blob/main/chamber/images/favicon.ico.gif" >
     <meta property="og:url" content="https://vincentcentwise.github.io/wdd231/chamber/directory.html">
 
@@ -53,14 +53,14 @@
   </header>
 
 <main>
-  <form action="thankyou.html">
+  <form   method="get" action="thankyou.html">
     <label title="Applicant first name"> 
       <span class="label-title">First Name:</span> 
-      <input type="text" name="firstName" title="First Name" pattern="[A-Za-z ]+" placeholder="John" required /> 
+      <input type="text" name="firstName" title="First Name" pattern="[A-Za-z ]+" placeholder="John" required autocomplete="given-name"/> 
     </label>
     <label title="Applicant Last name"> 
       <span class="label-title">Last Name:</span> 
-      <input type="text" name="lastname" title="Last Name" pattern="[A-Za-z ]+" placeholder="Doe" required /> 
+      <input type="text" name="lastname" title="Last Name" pattern="[A-Za-z ]+" placeholder="Doe" required  autocomplete="family-name"/> 
     </label>
     <label title="Applicant date of birth"> 
       <span class="label-title">Date of Birth:</span> 
@@ -68,7 +68,7 @@
     </label>
     <label title="Applicant email"> 
       <span class="label-title">Email:</span> 
-      <input type="email" id="email" name="email" required placeholder="example@example.com" autocomplete="email"> 
+      <input type="email" id="email" name="email" required placeholder="example@example.com" pattern="[A-Za-z ]+" autocomplete="email"> 
     </label>
     <label title="Confirm Email"> 
       <span class="label-title">Confirm Email:</span> 
@@ -105,7 +105,7 @@
     <hr>
     <label title="Business name"> 
       <span class="label-title">Business / Organization Name:</span> 
-      <input type="text" name="businessName" required autocomplete="organization" title="Business or organization name" pattern="[A-Za-z ]+" placeholder="John" required /> 
+      <input type="text" name="businessName" required autocomplete="organization" title="Business or organization name" pattern="[A-Za-z ]+" placeholder="John" required autocomplete="organization-title" /> 
     </label>
     <label title="Membership level"> 
       <span class="label-title">Membership Level:</span> 
