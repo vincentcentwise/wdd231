@@ -309,6 +309,7 @@ nav ul li a {
   /* Show Hamburger */
   #menu-toggle {
     display: block;
+ 
   }
 
   /* Hide the menu initially */
@@ -316,7 +317,7 @@ nav ul li a {
     display: none;
     flex-direction: column;
     gap: 0;
-    background: #eee;
+    background: #4b19d4;
     padding: 1rem;
     position: absolute;
     top: 70px;    /* adjust depending on header height */
