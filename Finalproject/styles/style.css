@@ -1,0 +1,76 @@
+/* css/style.css - global layout & small utility classes */
+:root{
+  --accent: #1f6feb;
+  --accent-2: #06b6d4;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --card: #f8fafc;
+  --max-width: 1000px;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0f172a; background:#f3f4f6; }
+
+/* container */
+.container {
+  width: 92%;
+  max-width: var(--max-width);
+  margin: 24px auto;
+  padding: 18px;
+}
+
+/* card-like sections */
+.screen {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+/* grids */
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin: 12px 0;
+}
+
+/* course boxes (clickable) */
+.courseBox {
+  background: var(--card);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(2,6,23,0.04);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.courseBox:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(2,6,23,0.06); }
+.courseBox h3 { margin: 6px 0; font-size: 1rem; color: #0f172a; }
+
+/* buttons */
+.mode-btn, .subject-btn, button[type="submit"] {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.mode-btn:focus, .subject-btn:focus, button:focus { outline: 3px solid rgba(31,111,235,0.18); }
+
+/* accessible hidden class */
+.hidden { display: none !important; }
+
+/* small helpers */
+.leaderboard-small ol { padding-left: 16px; margin: 8px 0; }
+.small { padding: 6px 8px; border-radius: 6px; }
+
+/* responsive typography */
+h1 { font-size: clamp(1.2rem, 2.6vw, 2rem); margin: 8px 0 14px; }
+p, li { line-height: 1.45; color: var(--muted); }
+
+/* dialog styling */
+dialog[open] { max-width: 640px; border-radius: 8px; padding: 18px; border: none; box-shadow: 0 10px 30px rgba(2,6,23,0.2); }

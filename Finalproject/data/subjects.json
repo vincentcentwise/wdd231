@@ -1,0 +1,22 @@
+{
+  "items": [
+    { "id":"m-e-1","title":"Basic Addition","subject":"mathematics","difficulty":"easy","summary":"Fast mental addition practice.","full":"Practice adding single and double digit numbers with increasing speed.","author":"QuizHub Team","active":true },
+    { "id":"m-e-2","title":"Subtraction Basics","subject":"mathematics","difficulty":"easy","summary":"Simple subtraction drills.","full":"Subtraction of integers and word problems for beginners.","author":"QuizHub Team","active":true },
+    { "id":"m-m-1","title":"Multiplication Tables","subject":"mathematics","difficulty":"medium","summary":"Times tables to 12.","full":"Building speed and recall for multiplication facts.","author":"QuizHub Team","active":true },
+    { "id":"e-e-1","title":"Articles Practice","subject":"english","difficulty":"easy","summary":"Choose 'a' or 'an'.","full":"Focus on article usage in short sentences and exercises.","author":"QuizHub Team","active":true },
+    { "id":"e-m-1","title":"Synonyms & Antonyms","subject":"english","difficulty":"medium","summary":"Vocabulary building.","full":"Context based synonyms and antonyms for better expression.","author":"QuizHub Team","active":true },
+    { "id":"g-e-1","title":"Mixing Colors","subject":"general","difficulty":"easy","summary":"Basic color theory.","full":"Understand color mixing basics for art and design.","author":"QuizHub Team","active":true },
+    { "id":"g-m-1","title":"Nigerian Capitals","subject":"general","difficulty":"medium","summary":"Capitals of states and major cities.","full":"A regional knowledge quiz of capitals and cities.","author":"QuizHub Team","active":true },
+    { "id":"m-h-1","title":"Algebra Intro","subject":"mathematics","difficulty":"hard","summary":"Simple algebraic manipulation.","full":"Equations, simplification and solving linear equations.","author":"QuizHub Team","active":true },
+    { "id":"e-h-1","title":"Adverbs & Clauses","subject":"english","difficulty":"hard","summary":"Advanced grammar practice.","full":"Identify adverbs, clauses and sentence structure.","author":"QuizHub Team","active":true },
+    { "id":"g-h-1","title":"Historic Discoveries","subject":"general","difficulty":"hard","summary":"Science and history mini-quiz.","full":"Key discoveries and the scientists behind them.","author":"QuizHub Team","active":true },
+    { "id":"m-e-3","title":"Place Value","subject":"mathematics","difficulty":"easy","summary":"Understanding units and tens.","full":"Exercises on digits and place value to build number sense.","author":"QuizHub Team","active":true },
+    { "id":"m-m-2","title":"Fractions 101","subject":"mathematics","difficulty":"medium","summary":"Basic fractions and equivalence.","full":"Add, subtract and compare common fractions.","author":"QuizHub Team","active":true },
+    { "id":"e-e-2","title":"Plural Forms","subject":"english","difficulty":"easy","summary":"Common plurals.","full":"Irregular plurals and rules for forming plurals in English.","author":"QuizHub Team","active":true },
+    { "id":"g-m-2","title":"World Flags","subject":"general","difficulty":"medium","summary":"Identify countries by flag.","full":"Quick flag identification and associated facts.","author":"QuizHub Team","active":true },
+    { "id":"m-h-2","title":"Geometry Basics","subject":"mathematics","difficulty":"hard","summary":"Shapes, angles and area.","full":"Properties of shapes, area and perimeter calculations.","author":"QuizHub Team","active":true },
+    { "id":"e-m-2","title":"Comprehension Steps","subject":"english","difficulty":"medium","summary":"Short reading comprehension.","full":"Read short passages and answer inference questions.","author":"QuizHub Team","active":true },
+    { "id":"g-e-2","title":"Simple Science","subject":"general","difficulty":"easy","summary":"Basic science facts.","full":"Introductory questions about the natural world for beginners.","author":"QuizHub Team","active":true },
+    { "id":"g-m-3","title":"Geography Skills","subject":"general","difficulty":"medium","summary":"Maps and coordinates.","full":"Latitude, longitude and map reading basics.","author":"QuizHub Team","active":true }
+  ]
+}

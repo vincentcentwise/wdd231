@@ -1,0 +1,92 @@
+:root {
+    --secondary-color: #008143;
+    --bg-color: #fff;
+    --accent-color: #323836;
+    --text-color: #0f0f0f;
+    --heading1-font: 'Boldonse',  'sans-serif';
+    --heading2-6-font: 'Montserrat', 'sans-serif';
+    --body-font: 'Montserrat', 'sans-serif';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: var(--heading1-font);
+    font-weight: 400;
+    color: var(--secondary-color)
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+#test-h1 {
+    font-family: var(--heading1-font);
+}
+
+#test-h2-h6 {
+    font-family: var(--heading2-6-font);
+    font-weight: 600;
+}
+
+#test-body {
+    font-family: var(--body-font);
+}
+
+#secondary {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+#background {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;  
+}
+
+#accent {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+#text-color {
+    width: 40px;
+    height: 40px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+body {
+    padding: 10px 30px;
+    margin: 1px 10px;
+    line-height: 40px;
+    color: var(--text-color)
+}
+
+a {
+    font-family: var(--heading2-6-font);
+    font-weight: 600;
+}
+
+span {
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #777272;;
+}
+footer {
+    border-top: 1px solid #777272;
+    text-align: center;
+}
+

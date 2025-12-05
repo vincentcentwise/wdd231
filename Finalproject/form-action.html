@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game | Choose Your Challenge</title>
+
+    <!-- SEO -->
+    <meta name="description" content="A fun and interactive quiz platform offering Mathematics, English, and General Knowledge with multiple difficulty levels.">
+    <meta name="author" content="Your Name">
+
+    <!-- Social Sharing -->
+    <meta property="og:title" content="Quiz Game – Play, Learn, Improve!">
+    <meta property="og:description" content="Test your knowledge across subjects with easy, medium, and hard difficulty levels.">
+    <meta property="og:image" content="images/placeholder.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+     <script src="scripts/main.js" defer></script>
+      <script src="scripts/modal.js" defer></script>
+       <script src="scripts/quiz-settings.js" defer></script>
+        <script src="scripts/discovery.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Go to Home">
+                <span class="logo" aria-hidden="true">cent</span>
+                <span>Quize Game website</span>
+            </a>
+
+            <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="navMenu">
+        <ul class="nav-list">
+            <li id="nav-object"><a href="index.html">Home</a></li>
+            <li id="nav-object-sec"><a href="#">About us</a></li>
+            <li id="nav-object-third"><a href="">Register to play</a></li>
+            <li id="nav-object-third"><a href="">our discovery</a></li>
+        </ul>
+    </nav>
+ 
+ 
+ <main class="container screen">
+    <h1>Form Data</h1>
+    <div id="output"></div>
+    <p><a href="game.html">Go to game</a></p>
+  </main>
+
+  <script>
+    // parse query params and display them
+    const params = new URLSearchParams(window.location.search);
+    const out = document.getElementById('output');
+    if (!params.toString()) {
+      out.textContent = 'No form data received.';
+    } else {
+      const ul = document.createElement('ul');
+      for (const [k,v] of params.entries()) {
+        const li = document.createElement('li');
+        li.textContent = `${k}: ${v}`;
+        ul.appendChild(li);
+      }
+      out.appendChild(ul);
+    }
+  </script>
+</body>
+</html>
