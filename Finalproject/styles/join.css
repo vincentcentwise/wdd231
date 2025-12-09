@@ -1,0 +1,185 @@
+:root{
+    --bg:#f2f4f7;
+    --panel:#fff;
+    --accent:#128fdb;
+    --muted:#666;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,Roboto,Helvetica,Arial;
+    margin:0;
+    background:var(--bg);
+    color:#111;
+}
+
+/* -------------------------------
+   MAIN TWO-COLUMN LAYOUT
+-------------------------------- */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  /* FORM (wide) | CARDS (narrow) */
+    gap: 20px;
+    max-width: 1100px;
+    padding: 20px;
+    margin: 25px auto;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 880px){
+    main {
+        grid-template-columns: 1fr; /* stack */
+    }
+}
+
+/* -------------------------------
+   FORM PANEL
+-------------------------------- */
+form{
+    background: var(--panel);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(20,30,50,.06);
+}
+
+h2{
+    font-size:1rem;
+    margin:.25rem 0 10px;
+    color:#333;
+}
+
+label{
+    display:flex;
+    align-items:center;
+    padding:8px 0;
+}
+
+.label-title{
+    width:160px;
+    font-weight:600;
+}
+
+@media(max-width:880px){
+    .label-title{width:120px;}
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+select,
+textarea {
+    flex:1;
+    padding:8px;
+    border:1px solid #d5d9df;
+    border-radius:4px;
+    font-size:.95rem;
+}
+
+.small-select{
+    width:110px;
+    margin-left:8px;
+}
+
+textarea{
+    min-height:80px;
+}
+
+hr{
+    border:0;
+    border-top:1px solid #eceff3;
+    margin:15px 0;
+}
+
+.form-actions{
+    margin-top:12px;
+}
+
+input[type=submit]{
+    background:var(--accent);
+    color:#fff;
+    padding:10px 16px;
+    border-radius:4px;
+    border:0;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* -------------------------------
+   CARDS PANEL (RIGHT COLUMN)
+-------------------------------- */
+.cards-panel{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.card{
+    background:var(--panel);
+    padding:15px;
+    border-radius:6px;
+    box-shadow:0 4px 12px rgba(20,30,50,.04);
+    display:flex;
+    flex-direction:column;
+
+    /* animation start state */
+    opacity:0;
+    transform:translateY(10px) scale(.98);
+}
+
+/* animation active */
+.card.show{
+    animation:cardIn .5s ease forwards;
+}
+
+@keyframes cardIn{
+    to{
+        opacity:1;
+        transform:none;
+    }
+}
+
+.card h3{
+    margin:0 0 6px;
+}
+
+.card .small{
+    color:var(--muted);
+    font-size:.9rem;
+    margin:0 0 8px;
+}
+
+.card-link{
+    font-weight:600;
+    color:var(--accent);
+    text-decoration:none;
+}
+
+.card:focus{
+    outline:3px solid rgba(18,143,219,.12);
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:3px solid rgba(18,143,219,.12);
+}
+
+/* Add a simple animation to the form */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}

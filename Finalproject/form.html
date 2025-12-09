@@ -7,19 +7,20 @@
 
     <!-- SEO -->
     <meta name="description" content="A fun and interactive quiz platform offering Mathematics, English, and General Knowledge with multiple difficulty levels.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="VINCENT TAIYE BALOGUN">
 
     <!-- Social Sharing -->
     <meta property="og:title" content="Quiz Game – Play, Learn, Improve!">
     <meta property="og:description" content="Test your knowledge across subjects with easy, medium, and hard difficulty levels.">
-    <meta property="og:image" content="images/placeholder.jpg">
-    <meta property="og:type" content="website">
+     <meta property="og:image" content="https://github.com/vincentcentwise/wdd231/blob/main/Finalproject/images/vin.jpg" >
+    <meta property="og:url" content="https://github.com/vincentcentwise/wdd231/blob/main/Finalproject">
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-      <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="styles/join.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,11 +29,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
         rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+       <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
      <script src="scripts/main.js" defer></script>
-      <script src="scripts/modal.js" defer></script>
-       <script src="scripts/quiz-settings.js" defer></script>
-        <script src="scripts/discovery.js" defer></script>
+  
+  
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 
             <button id="ham-btn" class="hamburger"></button>
     </header>
-
+       
     <nav id="navMenu">
         <ul class="nav-list">
             <li id="nav-object"><a href="index.html">Home</a></li>
@@ -57,7 +58,142 @@
     </nav>
 
     <main>
-        
+         
+  <form   method="get" action="form-action.html">
+    <label title="Applicant first name"> 
+      <span class="label-title">First Name:</span> 
+      <input type="text" name="firstName" title="First Name" pattern="[A-Za-z ]+" placeholder="John" required autocomplete="given-name"/> 
+    </label>
+    <label title="Applicant Last name"> 
+      <span class="label-title">Last Name:</span> 
+      <input type="text" name="lastname" title="Last Name" pattern="[A-Za-z ]+" placeholder="Doe" required  autocomplete="family-name"/> 
+    </label>
+    <label title="Applicant date of birth"> 
+      <span class="label-title">Date of Birth:</span> 
+      <input type="date" name="dateOfBirth" title="Date of Birth" /> 
+    </label>
+    <label title="Applicant email"> 
+      <span class="label-title">Email:</span> 
+      <input type="email" id="email" name="email" required placeholder="example@example.com" pattern="[A-Za-z ]+" autocomplete="email"> 
+    </label>
+    <label title="Confirm Email"> 
+      <span class="label-title">Confirm Email:</span> 
+      <input type="email" id="emailConfirm" name="emailConfirm" required placeholder="example@example.com" autocomplete="email"> 
+    </label>
+    <label title="Password"> 
+      <span class="label-title">Password:</span> 
+      <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one number, and one special character" placeholder="********"> 
+    </label>
+    <label title="Confirm Password"> 
+      <span class="label-title">Confirm Password:</span> 
+      <input type="password" id="passwordConfirm" name="passwordConfirm" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Password must be at least 8 characters, contain at least one uppercase letter, one lowercase letter, one number, and one special character" placeholder="********"> 
+    </label>
+    <label title="State"> 
+      <span class="label-title">State:</span> 
+      <select name="state" title="State"> 
+        <option value="">Choose a state</option> 
+        <option>State A</option> 
+        <option>State B</option> 
+      </select> 
+    </label>
+    <label title="Zip code"> 
+      <span class="label-title">Zip Code:</span> 
+      <input type="text" name="zip" title="Zip code" pattern="[0-9]{5}" placeholder="12345" required /> 
+    </label>
+    <label title="Phone"> 
+      <span class="label-title">Phone:</span> 
+      <input type="tel" name="mobile" required autocomplete="tel" title="Mobile phone" placeholder="No spaces or dashes" /> 
+      <select name="phoneType" title="Phone type" class="small-select"> 
+        <option>Mobile</option> 
+        <option>Home</option> 
+      </select> 
+    </label>
+    <hr>
+    <label title="Business name"> 
+      <span class="label-title">Business / Organization Name:</span> 
+      <input type="text" name="businessName" required autocomplete="organization" title="Business or organization name" pattern="[A-Za-z ]+" placeholder="John" required autocomplete="organization-title" /> 
+    </label>
+    <label title="Membership level"> 
+      <span class="label-title">Membership Level:</span> 
+      <select name="membership" required title="Membership level"> 
+        <option value="">-- Select --</option> 
+        <option value="np">NP Membership (np)</option> 
+        <option value="bronze">Bronze Membership (bronze)</option> 
+        <option value="silver">Silver Membership (silver)</option> 
+        <option value="gold">Gold Membership (gold)</option> 
+      </select> 
+    </label>
+    <label title="Description"> 
+      <span class="label-title">Business Description:</span> 
+      <textarea name="description" title="Business description" pattern="[A-Za-z ]+" placeholder="this is ...." required ></textarea> 
+    </label>
+    <input type="hidden" id="timestamp" name="timestamp" />
+    <div class="form-actions"> 
+      <input type="submit" value="Create account" /> 
+    </div>
+  </form>
+
+
+
+<!-- Cards column -->
+<aside class="cards-panel" aria-label="Membership levels">
+<div class="card" data-target="modal-np" tabindex="0">
+<h3>NP Membership</h3>
+<p class="small">Non-profit — No fee</p>
+<a href="#" class="card-link" data-target="modal-np">Benefits & details</a>
+</div>
+
+
+<div class="card" data-target="modal-bronze" tabindex="0">
+<h3>Bronze</h3>
+<p class="small">Entry-level benefits</p>
+<a href="#" class="card-link" data-target="modal-bronze">Benefits & details</a>
+</div>
+
+
+<div class="card" data-target="modal-silver" tabindex="0">
+<h3>Silver</h3>
+<p class="small">Includes training & spotlight</p>
+<a href="#" class="card-link" data-target="modal-silver">Benefits & details</a>
+</div>
+
+
+<div class="card" data-target="modal-gold" tabindex="0">
+<h3>Gold</h3>
+<p class="small">Full premium benefits</p>
+<a href="#" class="card-link" data-target="modal-gold">Benefits & details</a>
+</div>
+</aside>
+
+
+<!-- dialogs -->
+<dialog id="modal-np">
+<h4>NP Membership Benefits</h4>
+<p>Directory listing, community events, newsletter.</p>
+<button data-close>Close</button>
+</dialog>
+
+
+<dialog id="modal-bronze">
+<h4>Bronze Benefits</h4>
+<p>Event discounts, basic listing, training webinars.</p>
+<button data-close>Close</button>
+</dialog>
+
+
+<dialog id="modal-silver">
+<h4>Silver Benefits</h4>
+<p>Priority listing, featured article, 2 training sessions/year.</p>
+<button data-close>Close</button>
+</dialog>
+
+
+<dialog id="modal-gold">
+<h4>Gold Benefits</h4>
+<p>Premium advertising, exclusive events, custom promo support.</p>
+<button data-close>Close</button>
+</dialog>
+
     </main>
 
     <footer>
