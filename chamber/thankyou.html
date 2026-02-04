@@ -53,6 +53,24 @@
   </header>
 
 <main>
+  <body>
+<h1>Thank You for Joining!</h1>
+
+<div id="output"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("output").innerHTML = `
+<p><strong>First Name:</strong> ${params.get("firstName")}</p>
+<p><strong>Last Name:</strong> ${params.get("lastname")}</p>
+<p><strong>Email:</strong> ${params.get("email")}</p>
+<p><strong>Phone:</strong> ${params.get("mobile")}</p>
+<p><strong>Business Name:</strong> ${params.get("businessName")}</p>
+<p><strong>Date Submitted:</strong> ${params.get("timestamp")}</p>
+`;
+</script>
+
 <dl>
   <dt>First name</dt><dd id="r-first"></dd>
   <dt>Last name</dt><dd id="r-last"></dd>
@@ -61,7 +79,7 @@
   <dt>Business</dt><dd id="r-business"></dd>
   <dt>Submitted at</dt><dd id="r-ts"></dd>
 </dl>
-
+  </body>
 <p style="margin-top:12px">If anything is incorrect, <a href="join.html">return to the form</a> and submit again.</p></main>
 <footer>
         <div class="footerGrid">

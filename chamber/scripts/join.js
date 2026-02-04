@@ -16,6 +16,8 @@ dlg.querySelector('[data-close]')?.focus();
 }
 });
 });
+  document.getElementById("timestamp").value = new Date().toISOString();
+
 document.querySelectorAll('dialog [data-close]').forEach(b=>b.addEventListener('click', ()=>b.closest('dialog').close()));
 // Basic form consistency checks before submit: email and password confirmation
 const form = document.getElementById('membershipForm');
