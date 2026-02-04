@@ -69,8 +69,10 @@
       </label>
       <label title="Applicant email"> 
         <span class="label-title">Email:</span> 
-        <input type="email" id="email" name="email" required 
-        placeholder="example@example.com" autocomplete="email">
+      <input type="email" id="email" name="email" required 
+      title="Email address"
+      placeholder="example@example.com" 
+      autocomplete="email">
 
       </label>
       <label title="Confirm Email"> 
@@ -106,13 +108,24 @@
         </select> 
       </label>
       <hr>
-  <label title="Applicant title">
-    <span class="label-title">Title / Position:</span>
-    <input type="text" name="title" title="Title"
-          pattern="[A-Za-z -]{7,}" 
-          placeholder="Business Manager"
-          required autocomplete="organization-title">
-  </label>
+<label title="Applicant title">
+  <span class="label-title">Title / Position:</span>
+  <input type="text" name="title" title="Title"
+        pattern="[A-Za-z -]{7,}" 
+        placeholder="Business Manager"
+        required 
+        autocomplete="organization-title">
+</label>
+
+<label title="Business or organization name">
+  <span class="label-title">Business / Organization Name:</span>
+  <input type="text" name="organization" 
+         title="Business or organization name"
+         placeholder="ABC Enterprises"
+         required 
+         autocomplete="organization">
+</label>
+
 
   <label title="Membership level"> 
         <span class="label-title">Membership Level:</span> 
