@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Game | Choose Your Challenge</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Play an interactive quiz game with Mathematics, English, and General Knowledge questions across multiple difficulty levels. Improve your skills while having fun.">
+    <meta name="author" content="VINCENT TAIYE BALOGUN">
+
+    <!-- Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Quiz Game – Test Your Knowledge Across Multiple Subjects">
+    <meta property="og:description" content="Challenge yourself with quizzes in Maths, English, and General Knowledge. Choose your difficulty level and track your improvement.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/vincentcentwise/wdd231/main/Finalproject/images/vin.jpg">
+    <meta property="og:url" content="https://vincentcentwise.github.io/wdd231/Finalproject/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+     <script src="scripts/main.js" defer></script>
+      <script src="scripts/modal.js" defer></script>
+       <script src="scripts/quiz-settings.js" defer></script>
+        <script src="scripts/discovery.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Go to Home">
+                <span class="logo" aria-hidden="true">cent</span>
+                <span>Quize Game website</span>
+            </a>
+
+            <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="navMenu">
+        <ul class="nav-list">
+            <li id="nav-object"><a href="index.html">Home</a></li>
+            <li id="nav-object-sec"><a href="#">About us</a></li>
+            <li id="nav-object-third"><a href="">Register to play</a></li>
+            <li id="nav-object-third"><a href="">our discovery</a></li>
+        </ul>
+    </nav>
+ 
+ 
+ <main class="container screen">
+    <h1>Form Data</h1>
+    <div id="output"></div>
+    <p><a href="game.html">Go to game</a></p>
+  </main>
+
+  <script>
+    // parse query params and display them
+    const params = new URLSearchParams(window.location.search);
+    const out = document.getElementById('output');
+    if (!params.toString()) {
+      out.textContent = 'No form data received.';
+    } else {
+      const ul = document.createElement('ul');
+      for (const [k,v] of params.entries()) {
+        const li = document.createElement('li');
+        li.textContent = `${k}: ${v}`;
+        ul.appendChild(li);
+      }
+      out.appendChild(ul);
+    }
+  </script>
+</body>
+</html>
